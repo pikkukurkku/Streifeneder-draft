@@ -11,7 +11,7 @@ import SwiftUI
 struct Streifeneder_draftApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeScreen()
         }
     }
 }
