@@ -24,17 +24,17 @@ struct ProductsCarousel: View {
                     }
                 }
                 .padding(.horizontal)
-                .padding(.bottom, 20)
+     //           .padding(.bottom, 20)
             }
             .clipped(antialiased: false)
         }
         .padding(.vertical)
-        .background(Color.background)
+      
         // .clipShape(RoundedRectangle(cornerRadius: 20))
         //   .padding(.horizontal)
     }
 }
 
-#Preview {
-    ProductsCarousel()
-}
+//#Preview {
+//    ProductsCarousel()
+//}

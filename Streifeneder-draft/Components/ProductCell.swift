@@ -39,6 +39,6 @@ struct ProductCell: View {
     }
 
 
-#Preview {
-    ProductCell(imageName: "orthesen", title: "Orthesen duebuebfc")
-}
+//#Preview {
+//    ProductCell(imageName: "orthesen", title: "Orthesen duebuebfc")
+//}
