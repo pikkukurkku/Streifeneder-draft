@@ -13,17 +13,19 @@ struct MarketplaceView: View {
     @State private var navigateToHome = false
     
     @Environment(\.dismiss) var dismiss
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationStack {
             ZStack {
-                Color(.white)
+                Color(colorScheme == .dark ? .black : .white) 
                     .ignoresSafeArea()
                 
                 VStack(spacing: 0) {
                 
                     VStack (spacing: 0) {
                             ScrollView {
+                            TrendingHashtagView()
                             ProductsCarousel()
                             ProductsCarousel()
                             ProductsCarousel()
@@ -42,7 +44,7 @@ struct MarketplaceView: View {
             .navigationBarBackButtonHidden(true)
             .searchable(text: $searchTerm, placement: .toolbar, prompt: "Suche Artikel")
         }
-     
+        .preferredColorScheme(.light)
     }
 }
 

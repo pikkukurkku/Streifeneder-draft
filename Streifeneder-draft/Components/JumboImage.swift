@@ -10,18 +10,17 @@ import SwiftUI
 struct JumboImage: View {
     var body: some View {
         ZStack {
-            // Image
+   
             Image("background")
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width, height: 300)
                 .clipped()
                 
-            // Overlay with soft color
-            Color.white.opacity(0.2) // This will create a semi-transparent black overlay
+         
+            Color.white.opacity(0.2)
                 .frame(width: UIScreen.main.bounds.width, height: 300)
-            
-            // Text and background for the overlay
+
             VStack(alignment: .trailing) {
                 Text("Streifeneder Unternehmensgruppe")
                     .font(.body)
@@ -33,11 +32,11 @@ struct JumboImage: View {
                     .foregroundColor(.white)
             }
             .padding(10)
-            .background(Color.black.opacity(0.3)) // Background for the text
+            .background(Color.black.opacity(0.3))
             .cornerRadius(10)
-            .padding(.trailing, 10)
-            .padding(.bottom, 8)
-            .frame(maxWidth: .infinity, alignment: .bottomTrailing) // Ensure text is positioned correctly
+            .frame(width: UIScreen.main.bounds.width, height: 300, alignment: .bottomTrailing)
+            .padding(.bottom, 35)
+            .padding(.trailing, 30)
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .topLeading)

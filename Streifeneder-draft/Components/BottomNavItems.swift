@@ -46,3 +46,8 @@ enum BottomNavItem: Int, CaseIterable {
         }
     }
 }
+
+
+extension BottomNavItem: Identifiable {
+    var id: Int { rawValue }
+}

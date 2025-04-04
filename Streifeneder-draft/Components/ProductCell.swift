@@ -18,7 +18,8 @@ struct ProductCell: View {
                     .scaledToFit()
                     .frame(height: 140)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-
+                    .padding(.bottom, 10)
+                Divider()
                 Text(title)
                     .font(.headline)
                     .fontWeight(.medium)
@@ -39,6 +40,6 @@ struct ProductCell: View {
     }
 
 
-//#Preview {
-//    ProductCell(imageName: "orthesen", title: "Orthesen duebuebfc")
-//}
+#Preview {
+    ProductCell(imageName: "orthesen", title: "Orthesen duebuebfc")
+}

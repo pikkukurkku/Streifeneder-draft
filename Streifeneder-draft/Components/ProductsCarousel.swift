@@ -35,6 +35,6 @@ struct ProductsCarousel: View {
     }
 }
 
-//#Preview {
-//    ProductsCarousel()
-//}
+#Preview {
+    ProductsCarousel()
+}
